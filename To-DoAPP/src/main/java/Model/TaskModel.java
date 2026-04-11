@@ -1,4 +1,4 @@
-package Task;
+package Model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -17,4 +17,8 @@ public class TaskModel {
     private Long id;
     private String title;
     private String description;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private UserModel user;
 }
