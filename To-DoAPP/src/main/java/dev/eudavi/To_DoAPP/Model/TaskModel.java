@@ -1,4 +1,4 @@
-package Model;
+package dev.eudavi.To_DoAPP.Model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
