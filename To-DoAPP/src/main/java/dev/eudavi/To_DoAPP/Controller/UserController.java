@@ -1,23 +1,24 @@
 package dev.eudavi.To_DoAPP.Controller;
 
+import dev.eudavi.To_DoAPP.DTO.UserDTO;
 import dev.eudavi.To_DoAPP.Model.UserModel;
+import dev.eudavi.To_DoAPP.Service.UserService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/usuario")
-class UserControllerController {
+@RequestMapping("/cadastro")
+class UserController {
 
-    @GetMapping("/{username}")
-    public UserModel getUsuario(@PathVariable String username) {
-        UserModel user = new UserModel();
-        user.setUsername(username);
-        user.setEmail(username + "email");
-        return user;
+    private final UserService userService;
+
+    public UserController(UserService userService) {
+        this.userService = userService;
     }
 
     @PostMapping
-    public  UserModel postUsuario(@RequestBody UserModel userModel) {
-        return userModel;
+    public  UserModel criarUsuario(@RequestBody UserDTO dto) {
+        return userService.salvar(dto);
     }
+
 }
 
