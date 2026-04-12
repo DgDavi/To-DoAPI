@@ -23,4 +23,5 @@ public class TaskController {
     public TaskModel criarTask(@RequestBody @Valid TaskDTO dto) {
         return taskService.salvar(dto);
     }
+
 }
