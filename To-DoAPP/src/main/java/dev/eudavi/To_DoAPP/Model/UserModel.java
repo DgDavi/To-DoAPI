@@ -23,8 +23,6 @@ public class UserModel {
     private String email;
     private String password;
 
-
-
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonIgnore
     private List<TaskModel> tasks = new ArrayList<>();
