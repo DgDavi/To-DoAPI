@@ -1,8 +1,8 @@
-package dev.eudavi.To_DoAPP.Controller;
+package dev.eudavi.To_DoAPP.controller;
 
-import dev.eudavi.To_DoAPP.DTO.TaskDTO;
-import dev.eudavi.To_DoAPP.Model.TaskModel;
-import dev.eudavi.To_DoAPP.Service.TaskService;
+import dev.eudavi.To_DoAPP.dto.TaskDTO;
+import dev.eudavi.To_DoAPP.model.TaskModel;
+import dev.eudavi.To_DoAPP.service.TaskService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

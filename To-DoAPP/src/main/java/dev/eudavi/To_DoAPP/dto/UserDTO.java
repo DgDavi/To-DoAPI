@@ -1,13 +1,17 @@
-package dev.eudavi.To_DoAPP.DTO;
+package dev.eudavi.To_DoAPP.dto;
 
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 
 public class UserDTO {
     @NotBlank(message = "Nome obrigatório.")
     private String name;
     @NotBlank(message = "Email obrigatório.")
+    @Email(message = "Email inválido.")
     private String email;
     @NotBlank(message = "Senha obrigatória.")
+
     private String password;
 
     public UserDTO() {}

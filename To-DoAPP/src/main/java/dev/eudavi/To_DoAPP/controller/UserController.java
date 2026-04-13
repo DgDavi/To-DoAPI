@@ -1,9 +1,9 @@
-package dev.eudavi.To_DoAPP.Controller;
+package dev.eudavi.To_DoAPP.controller;
 
-import dev.eudavi.To_DoAPP.DTO.LoginDTO;
-import dev.eudavi.To_DoAPP.DTO.UserDTO;
-import dev.eudavi.To_DoAPP.Model.UserModel;
-import dev.eudavi.To_DoAPP.Service.UserService;
+import dev.eudavi.To_DoAPP.dto.LoginDTO;
+import dev.eudavi.To_DoAPP.dto.UserDTO;
+import dev.eudavi.To_DoAPP.model.UserModel;
+import dev.eudavi.To_DoAPP.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +19,7 @@ public class UserController {
 
     @PostMapping
     public  UserModel criarUsuario(@RequestBody @Valid UserDTO dto) {
-        return userService.salvar(dto);
+        return userService.save(dto);
     }
 
     @PostMapping("/login")

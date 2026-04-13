@@ -1,4 +1,4 @@
-package dev.eudavi.To_DoAPP.DTO;
+package dev.eudavi.To_DoAPP.dto;
 
 import jakarta.validation.constraints.NotBlank;
 

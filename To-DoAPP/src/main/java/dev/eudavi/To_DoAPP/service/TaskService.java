@@ -1,8 +1,8 @@
-package dev.eudavi.To_DoAPP.Service;
+package dev.eudavi.To_DoAPP.service;
 
-import dev.eudavi.To_DoAPP.DTO.TaskDTO;
-import dev.eudavi.To_DoAPP.Model.TaskModel;
-import dev.eudavi.To_DoAPP.Repository.TaskRepository;
+import dev.eudavi.To_DoAPP.dto.TaskDTO;
+import dev.eudavi.To_DoAPP.model.TaskModel;
+import dev.eudavi.To_DoAPP.repository.TaskRepository;
 import org.springframework.stereotype.Service;
 
 @Service

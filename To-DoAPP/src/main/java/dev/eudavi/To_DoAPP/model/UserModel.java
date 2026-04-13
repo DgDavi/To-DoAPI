@@ -1,7 +1,6 @@
-package dev.eudavi.To_DoAPP.Model;
+package dev.eudavi.To_DoAPP.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 

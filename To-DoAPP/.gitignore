@@ -18,7 +18,6 @@ target/
 *.iws
 *.iml
 *.ipr
-.idea
 
 ### NetBeans ###
 /nbproject/private/
@@ -34,7 +33,6 @@ build/
 .vscode/
 
 
-target/
 *.log
 .env
 node_modules/
